@@ -11,4 +11,4 @@ stored as either a view or stored procedure that the API would then query from.
 ANSWER TO EXERCISE C:
 
 Have the API generate billing emails/smses that would be sent to each client on a daily, weekly or monthly basis, depending on the clients preference, this way the user would receive
-their bills at their own convenience without the need to interact with any app.
+their bills at their own convenience without the need to interact with a web portal.
