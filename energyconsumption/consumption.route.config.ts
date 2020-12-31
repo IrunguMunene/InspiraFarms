@@ -54,12 +54,6 @@ export class EnergyConsumptionRoute extends BaseRoute {
             })
         });
         
-        this.app.route('/consumption/:deviceId').get((req: express.Request, res: express.Response, next: express.NextFunction) => {
-            next()
-        }).get((req: express.Request, res: express.Response) => {
-            res.status(200).send(`GET requested for device id ${req.params.deviceId}`);
-        });
-
         return this.app;
     }
 }
