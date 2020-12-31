@@ -16,7 +16,6 @@ const app: express.Application = express();
 dotenv.config();
 
 const server: http.Server = http.createServer(app);
-const port: Number = 3000;
 const routes: Array<BaseRoute> = [];
 const debugLog: debug.IDebugger = debug('app');
 
