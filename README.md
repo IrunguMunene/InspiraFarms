@@ -16,13 +16,12 @@ their bills at their own convenience without the need to interact with a web por
 The answer to exercise A has been developed using; 
     nodejs, 
     express.js for routing, 
-    debug a module that I have used to avoid calling console.log() while developing our application, 
-    winston is responsible for logging requests to our API and the responses (and errors) returned,
-    cors is a piece of Express.js middleware that allows us to enable cross-origin resource sharing,
+    debug a module that I have used to avoid calling console.log() while developing the api, 
+    winston is responsible for logging requests to the API and the responses (and errors) returned,
+    cors is a piece of Express.js middleware that enables cross-origin resource sharing,
     and typescript using VS Code.
 
-In the process, I have also played a little with inheritance in have a base route from which other routes would derive. I took this as an opportunity to somewhat show case my skill in backend development to the extent possible the exercise allowed. I have tried as much as possible to comment the code and make it
-readable and easier to understand at first glance. However, feel free to ask any question where something might not be clear.
+In the process, I have also played a little with inheritance by having a base route from which other routes would derive. I took this as an opportunity to somewhat show case my skill in backend development to the extent possible the exercise allowed without overdoing or having excess code than the project would require. I have tried as much as possible to comment the code and make it readable and easier to understand at first glance. However, feel free to ask any question where something might not be clear.
 
 npm install should get the necessary dependencies installed upon which either npm run debug will run the api
 showing a lot of debug information, as its meant to mimic a dev environment, 
