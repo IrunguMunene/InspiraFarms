@@ -5,7 +5,7 @@ import DbConnection from '../database/dbconnection';
 
 // Query statement creates a LAG function. The LAG consumption value is then subtracted from the current minutes
 // consumption to get the minute by minute consumption per device. These values are then summed to show the daily
-// energy consumption per device for the last seven days.
+// energy consumption per device for the last seven days as per the instructions in exercise A.
 const queryStr = `SELECT device_id, ConsumptionDate, SUM(TotalConsumed) AS PowerConsumedWh, SUM(TotalConsumed) /1000 AS PowerConsumedkWh
 FROM
 (
