@@ -56,8 +56,8 @@ app.get('/', (req: express.Request, res: express.Response) => {
     res.status(200).send(`Server up and running!`)
 });
 
-server.listen(process.env.PORT, () => {
-    debugLog(`Server running at http://localhost:${process.env.PORT}`);
+server.listen(process.env.PORT || 3000, () => {
+    debugLog(`Server running at http://localhost:${process.env.PORT || 3000}`);
     routes.forEach((route: BaseRoute) => {
         debugLog(`Routes configured for ${route.getName()}`);
     });
