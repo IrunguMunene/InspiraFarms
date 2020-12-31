@@ -18,7 +18,7 @@ dotenv.config();
 const server: http.Server = http.createServer(app);
 const port: Number = 3000;
 const routes: Array<BaseRoute> = [];
-const debugLog: debug.IDebugger = debug('InspiraFarms Backend Qualification Test');
+const debugLog: debug.IDebugger = debug('app');
 
 // Adding middleware to parse all incoming requests as JSON 
 app.use(bodyparser.json());
