@@ -15,6 +15,7 @@ import debug from 'debug';
 const app: express.Application = express();
 dotenv.config();
 
+const port: Number = 5000;
 const server: http.Server = http.createServer(app);
 const routes: Array<BaseRoute> = [];
 const debugLog: debug.IDebugger = debug('app');
@@ -55,8 +56,8 @@ app.get('/', (req: express.Request, res: express.Response) => {
     res.status(200).send(`Server up and running!`)
 });
 
-server.listen(process.env.PORT || 3000, () => {
-    debugLog(`Server running at http://localhost:${process.env.PORT || 3000}`);
+server.listen(port, () => {
+    debugLog(`Server running at http://localhost:${port}`);
     routes.forEach((route: BaseRoute) => {
         debugLog(`Routes configured for ${route.getName()}`);
     });
